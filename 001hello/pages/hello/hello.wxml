@@ -1,1 +1,9 @@
-<view class="testview">hello word</view>
+<view class="testview">
+  <text>hello word</text>
+
+</view>
+
+<view class="testview">
+  <text>time: {{time}}</text>
+  
+</view>

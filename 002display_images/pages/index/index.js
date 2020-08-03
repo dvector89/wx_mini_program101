@@ -15,19 +15,16 @@ Page({
   },
   
   scrollTouchstart: function (e) {
-    console.log('start data0', this.data)
-    let py = e.touches[0].pageY;
-    console.log('start', py)
+    // console.log('start data0', this.data)
     this.setData({
-      startY: py
+      startY: e.touches[0].pageY
     })
-    console.log('start data1', this.data)
+    // console.log('start data1', this.data)
   },
 
   scrollTouchend: function (e) {
     let py = e.changedTouches[0].pageY;
     console.log('end', py);
-    this.setData({endY: py});
     console.log('gap', py - this.data.startY)
     let index = 0;
     if (py - this.data.startY > this.data.scrollGap){

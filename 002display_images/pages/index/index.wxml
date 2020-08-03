@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container" bindtouchstart="scrollTouchstart" bindtouchend="scrollTouchend" >
+  <image 
+		wx:if="{{imageIndex == 0}}"  src="../../images/1.jpg">
+  </image>
+  <image 
+		wx:elif="{{imageIndex == 1}}"  src="../../images/2.jpg">
+  </image>
+  <image 
+		wx:elif="{{imageIndex == 2}}"  src="../../images/3.jpg">
+  </image>
+  <text wx:else> Error </text>
+</view>

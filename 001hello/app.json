@@ -1,3 +1,6 @@
 {
-  "pages": ["pages/hello/hello"]
+  "pages": [
+    "pages/hello/hello"
+  ],
+  "sitemapLocation": "sitemap.json"
 }

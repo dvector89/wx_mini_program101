@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class="container" bindtouchstart="scrollTouchstart" bindtouchend="scrollTouchend" >
+  <text>Hello image {{imageIndex}}</text>
   <image 
 		wx:if="{{imageIndex == 0}}"  src="../../images/1.jpg">
   </image>
